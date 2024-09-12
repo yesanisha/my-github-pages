@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <div class="profile-container">
+        <header class="profile-header">
+            <img src="profile.avif" alt="Profile Picture" class="profile-pic">
+            <h1 class="profile-name">Anisha Kumari</h1>
+            <p class="profile-email">anisha.kumari@bcah.christuniversity.in</p>
+        </header>
+        
+        <section id="profile-info" class="profile-info">
+            <h2>Who's watching?</h2>
+            <ul>
+                <li><strong>Name:</strong> <span>Anisha Kumari</span></li>
+                <li><strong>Email:</strong> <span id="email">anisha.kumari@bcah.christuniversity.in</span></li>
+                <li><strong>Phone:</strong> <span id="phone">7526976187</span></li>
+                <li><strong>Favorite Genre:</strong> <span>Drama, Sci-Fi</span></li>
+                <li><strong>Subscription Plan:</strong> <span>Premium</span></li>
+            </ul>
+        </section>
+        
+        <div class="profile-actions">
+            <button id="edit-toggle" class="btn btn-primary">Edit Profile</button>
+            <button id="edit-btn" class="btn btn-primary" style="display:none;">Save Changes</button>
+            <button id="logout-btn" class="btn btn-danger">Logout</button>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

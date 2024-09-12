@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clg Project</title>
+    <link rel="stylesheet" href="homeStyle.css"/>
+</head>
+<body>
+
+ <header>
+    <nav>
+        <div class="logo">
+            <img src="WhatsApp_Image_2024-09-12_at_12.22.42-removebg-preview.png" alt="">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="genre.html">Categories</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </div>
+        
+    <div class="search">
+            <input type="text" name="" id="search_input" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user" onclick="toggleMenu()"></i>
+        </div>
+
+     <!-- Code for drop down profile information -->
+     <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+            <div class="user-info">
+                <img src="profile/user.png" alt="" class="src">
+                <h2>Pijus Hazra</h2>
+            </div>
+            <hr>
+
+            <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-user"></i>
+                <p style="padding: 7px;">Edit Profile</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-gear"></i>
+                <p>Settings & Privacy</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-question"></i>
+                <p>Help & Support</p>
+                <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Logout</p>
+                <span>></span>
+            </a>
+        </div>
+     </div>
+
+        
+
+    </nav>
+</header>
+
+
+<!-- Banner -->
+<div class="banner">
+    <video autoplay loop muted plays-inline class="back_video">
+      <source src="images/money heist.mp4" type="video/mp4">
+    </video>
+    <div class="banner_contents">
+        <h1 class="banner_title">Money Heist</h1>
+        <div class="banner_buttons">
+            <button class="banner_button"><i class="fa-solid fa-play"></i>Play</button>
+        </div>
+        <div class = "banner_description">
+        </div>
+    </div>
+    <div class="banner_fadeBottom"></div>
+</div>
+
+
+<!-- Top picks for you -->
+<div class="row">
+    <p>Latest Release</p>
+    <i class="fa-sharp fa-solid fa-chevron-left arrow"></i>
+    <div class="row_posters"> 
+        <div class="movie_list_item">
+            
+            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+       
+        <div class="movie_list_item">
+            
+            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+       
+        <div class="movie_list_item">
+            <div class="cont">
+            </div>
+            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+            </div>
+            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+        
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+    </div>
+    <i class="fa-sharp fa-solid fa-chevron-right arrow"></i>
+</div> 
+
+
+<!-- Netflix Originals -->
+<div class="row">
+    <p>Watch with your family/p>
+    <i class="fa-sharp fa-solid fa-chevron-left arrow"></i>
+    <div class="row_posters">
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images2/spiderman.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+       
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images2/ant man.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images2/avengers.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+     
+        
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="bad"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images2/jurassic world.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images2/money heist.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images2/moon knight.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images2/the boys.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images2/thor love of thunder.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="bad"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images2/topgun.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images2/Jhon Wick.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div> 
+        <i class="fa-sharp fa-solid fa-chevron-right arrow"></i>
+    </div>
+</div> 
+
+<!-- Now Playing -->
+<div class="row">
+    <p>Popular movies</p>
+    <i class="fa-sharp fa-solid fa-chevron-left arrow"></i>
+    <div class="row_posters">
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+       
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/130H1gap9lFfiTF9iDrqNIkFvC9.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5C9rerMqV1X0jnRdbbsM1BswVI2.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="bad"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wtFwgFFk1ze789ghcadWGEVjj3N.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+       
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jixBLmH4gQuTKTenZr89egvqZbW.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gCUFtTvjK4gbmjVxhx8bhyOhAeW.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="bad"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uQCxOziq79P3wDsRwQhhkhQyDsJ.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+       
+</div>
+
+<!-- Popular Movies -->
+<div class="row">
+    <p>Popular Movies</p>
+    <i class="fa-sharp fa-solid fa-chevron-left arrow"></i>
+    <div class="row_posters">
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/yph9PAbmjYPvyvbeZvdYIhCZHEu.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+       
+      
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jixBLmH4gQuTKTenZr89egvqZbW.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="bad"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gCUFtTvjK4gbmjVxhx8bhyOhAeW.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/uQCxOziq79P3wDsRwQhhkhQyDsJ.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ngl2FKBlU4fhbdsrtdom9LVLBXw.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+        
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/wtFwgFFk1ze789ghcadWGEVjj3N.jpg" alt="" class="row_poster row_posterLarge"/>  
+        </div>
+        <i class="fa-sharp fa-solid fa-chevron-right arrow"></i>
+    </div>
+</div>
+
+<div class="row">
+    <p>Disney Movies</p>
+    <i class="fa-sharp fa-solid fa-chevron-left arrow"></i>
+    <div class="row_posters">
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6LuXaihVIoJ5FeSiFb7CZMtU7du.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+       
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+       
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images/large-movie5.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images/large-movie1.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images/large-movie3.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="bad"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images/large-movie6.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images/large-movie4.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+
+        <div class="movie_list_item">
+           <div></div>
+            <img src="images/large-movie2.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div>
+        
+        <div class="movie_list_item">
+            <div class="cont">
+                <h3 class="excellent"><span></span><i class="fa-solid fa-star"></i>9.6</h3>
+            </div>
+            <img src="images/large-movie7.jpg" alt="" class="row_poster row_posterLarge"/>
+        </div> 
+        <i class="fa-sharp fa-solid fa-chevron-right arrow"></i>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="footer-left">
+    </div>
+    <div class="footer-center">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="footer-right">
+        <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+</footer>    
+
+<script src="https://kit.fontawesome.com/884ae82d6c.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
